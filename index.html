@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LearnHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkAuth('index')"></body>
+<header>
+<h1>Welcome to LearnHub.....</h1>
+
+<input type="text" id="searchCourse" placeholder="Search Courses">
+<button onclick="searchCourse()">Search</button>
+
+<br><br>
+<button onclick="logout()">Logout</button>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="course.html">Courses</a>
+<a href="register.html">Register</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Learn Skills Online </h2>
+<p>Choose from thousands of courses</p>
+<img src="skills.jpg" width="1400" height="400">
+</section>
+
+<h2 class="title">Popular Courses</h2>
+
+<div class="course-container">
+    <div class="course-track">
+
+        <!-- ORIGINAL -->
+        <div class="course">
+            <img src="pythonimg.jpg" width="100">
+            <h3>Python Programming</h3>
+            <a href="course.html">Start Course</a>
+        </div>
+
+        <div class="course">
+            <img src="webdelimg.jpg" width="100">
+            <h3>Web Development</h3>
+            <a href="course.html">Start Course</a>
+        </div>
+
+        <div class="course">
+            <img src="learnaiimg.jpg" width="100">
+            <h3>Artificial Intelligence</h3>
+            <a href="course.html">Start Course</a>
+        </div>
+        <div class="course">
+            <img src="Datascienceimg.jpg" width="100">
+            <h3>Data Science</h3>
+            <a href="course.html">Start Course</a>
+        </div>
+        <div class="course">
+            <img src="javaprogrammingimg.jpg" width="100">
+            <h3>Java Programming</h3>
+            <a href="course.html">Start Course</a>
+        </div>
+
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

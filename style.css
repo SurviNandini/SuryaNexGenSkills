@@ -1,0 +1,367 @@
+body{
+font-family:Arial;
+margin:0;
+background:#ded3c4;
+text-align:center;
+}
+
+header{
+background:#1c1d1f;
+color:rgb(116, 34, 198);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.navbar {
+    position: absolute;       /* place navbar absolutely */
+    top: 20px;                /* distance from top */
+    right: 20px;              /* distance from right */
+}
+
+.navbar a {
+    color: #333;              /* link color */
+    text-decoration: none;    /* remove underline */
+    margin-left: 15px;        /* spacing between links */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a:hover {
+    color: #FF5722;           /* hover color */
+}
+
+.hero img{
+width:80%;
+margin-top:20px;
+border-radius:10px;
+text-decoration: rgb(255, 85, 0);
+}
+
+.course-container{
+display: flex;
+flex-direction: row;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.course{
+background:oklch(58.067% 0.22338 343.582);
+padding:15px;
+border-radius:10px;
+width:250px;
+}
+
+.course img{
+width:100%;
+height: 60%;
+border-radius:20px;
+
+}
+h1 {
+    color: #721624; /* Change to any color */
+    text-align: center; /* optional: center the heading */
+    background-color: #a435f0;
+}
+
+button{
+padding:10px 20px;
+background:#a435f0;
+color:white;
+border:none;
+border-radius:5px;
+}
+.search-box{
+margin:50px;
+}
+
+.search-box input{
+padding:30px;
+width:450px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.search-box button{
+padding:10px 15px;
+background:#6a0dad;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+body.register-bg{
+    font-family: Arial, sans-serif;
+    background: url('logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.register-container{
+    background: rgba(255,255,255,0.9); /* semi-transparent white box */
+    width: 350px;
+    padding: 20px;
+    margin: 80px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    width: 80%;
+}
+
+button{
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.account-info{
+    display: flex;
+    align-items: center;
+}
+#courseArea {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    margin-top: 30px;
+}
+
+/* Style the table */
+
+.batch-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.batch-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #2E86C1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.curriculum-table {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.curriculum-table th, .curriculum-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.curriculum-table th {
+    background-color: #2E86C1;
+    color: white;
+}
+
+.curriculum-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.curriculum-table a {
+    color: #FF5722;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.curriculum-table a:hover {
+    text-decoration: underline;
+}
+/* Center full page */
+/* ONLY for reset page */
+/* RESET PAGE FIX */
+body.reset-page {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ded3c4; /* same as your theme */
+}
+
+/* centered box */
+.reset-container {
+    width: 320px;
+    padding: 25px;
+
+    background: white;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
+/* input */
+.reset-container input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* button */
+.reset-container button {
+    width: 100%;
+    margin-top: 15px;
+}
+/* FORGOT PAGE */
+body.forgot-page {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ded3c4;
+}
+
+/* box */
+.forgot-container {
+    width: 320px;
+    padding: 25px;
+
+    background: white;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
+/* input */
+.forgot-container input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* button */
+.forgot-container button {
+    width: 100%;
+    margin-top: 15px;
+}
+/* ================== FRONT PAGE ANIMATIONS ================== */
+
+/* HEADER FADE IN */
+header {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* HERO TEXT ANIMATION */
+.hero h2, .hero p {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* HERO IMAGE ZOOM */
+.hero img {
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* COURSE CARD HOVER */
+.course {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* BUTTON ANIMATION */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #8e2de2;
+}
+/* COURSE CONTAINER ANIMATION */
+/* COURSE CONTAINER */
+.course-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+/* WRAPPER (important for infinite effect) */
+.course-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollCourses 15s linear infinite;
+}
+
+/* COURSE CARD */
+.course {
+    min-width: 250px;
+    flex-shrink: 0;
+}
+
+/* ANIMATION */
+@keyframes scrollCourses {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
